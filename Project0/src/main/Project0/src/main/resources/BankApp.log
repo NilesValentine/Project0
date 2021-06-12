@@ -1,0 +1,134 @@
+INFO  | 2021-06-11 09:42:59 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 09:43:09 | [main] bankingservice.CustomerService (CustomerService.java:235) - NilseV
+INFO  | 2021-06-11 09:43:12 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 09:43:15 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 09:43:52 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-11 09:44:06 | [main] bankingservice.CustomerService (CustomerService.java:163) - NilseV
+INFO  | 2021-06-11 09:44:06 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-11 09:44:14 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-11 09:44:36 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 09:44:43 | [main] bankingservice.CustomerService (CustomerService.java:235) - NilseV
+INFO  | 2021-06-11 09:44:43 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 09:44:55 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 09:52:36 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 09:56:29 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 09:56:38 | [main] bankingservice.CustomerService (CustomerService.java:235) - NilseV
+INFO  | 2021-06-11 09:56:40 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 09:56:47 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 10:31:53 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 10:32:27 | [main] bankingservice.CustomerService (CustomerService.java:235) - Fred Fredburger
+INFO  | 2021-06-11 10:32:29 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 10:47:41 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-11 10:47:51 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles Valentine
+INFO  | 2021-06-11 10:47:51 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-11 10:48:00 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-11 10:48:24 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 10:48:29 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles Valentine
+INFO  | 2021-06-11 10:48:30 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 10:48:37 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 13:30:45 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-11 13:31:17 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles Valentine
+INFO  | 2021-06-11 13:31:17 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-11 13:31:20 | [main] bankingservice.CustomerService (CustomerService.java:166) - Password
+INFO  | 2021-06-11 14:47:12 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-11 14:47:18 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles
+INFO  | 2021-06-11 14:47:18 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-11 14:47:29 | [main] bankingservice.CustomerService (CustomerService.java:166) - Password
+INFO  | 2021-06-11 15:26:32 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:26:43 | [main] bankingservice.CustomerService (CustomerService.java:235) - 
+INFO  | 2021-06-11 15:26:45 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 15:30:07 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:30:11 | [main] bankingservice.CustomerService (CustomerService.java:235) - Tyler
+INFO  | 2021-06-11 15:30:16 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 15:30:35 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 15:37:19 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:37:22 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-11 15:37:23 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 15:37:27 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 15:39:03 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:39:06 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-11 15:39:07 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 15:39:10 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 15:39:32 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:40:36 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:40:40 | [main] bankingservice.CustomerService (CustomerService.java:235) - Tyler
+INFO  | 2021-06-11 15:40:42 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 15:40:46 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 15:45:54 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-11 15:46:01 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles
+INFO  | 2021-06-11 15:46:01 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-11 15:46:08 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-11 15:46:20 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 15:46:23 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-11 15:46:25 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 15:46:31 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 15:48:18 | [main] bankingservice.CustomerService (CustomerService.java:48) - Please enter the amount you want to deposit into your Savings
+INFO  | 2021-06-11 15:48:25 | [main] bankingservice.CustomerService (CustomerService.java:49) - 50.0
+INFO  | 2021-06-11 16:36:00 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 16:36:07 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-11 16:36:09 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 16:36:10 | [main] bankingservice.CustomerService (CustomerService.java:241) - Valentine
+INFO  | 2021-06-11 16:36:20 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 16:36:22 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-11 16:36:24 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 16:36:25 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-11 19:28:10 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 19:29:16 | [main] bankingservice.CustomerService (CustomerService.java:235) - Zume
+INFO  | 2021-06-11 19:29:18 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 19:29:22 | [main] bankingservice.CustomerService (CustomerService.java:241) - Nderu
+INFO  | 2021-06-11 19:54:53 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 19:54:56 | [main] bankingservice.CustomerService (CustomerService.java:235) - Zume
+INFO  | 2021-06-11 19:54:57 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 19:55:01 | [main] bankingservice.CustomerService (CustomerService.java:241) - Nderu
+INFO  | 2021-06-11 20:54:55 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-11 20:55:21 | [main] bankingservice.CustomerService (CustomerService.java:163) - Dragon
+INFO  | 2021-06-11 20:55:21 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-11 20:55:26 | [main] bankingservice.CustomerService (CustomerService.java:166) - Heart
+INFO  | 2021-06-11 20:55:30 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 20:55:33 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dragon
+INFO  | 2021-06-11 20:55:36 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 20:55:36 | [main] bankingservice.CustomerService (CustomerService.java:241) - Heart
+INFO  | 2021-06-11 23:53:18 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-11 23:53:26 | [main] bankingservice.CustomerService (CustomerService.java:235) - Tyler
+INFO  | 2021-06-11 23:53:27 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-11 23:53:31 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 00:04:20 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 00:04:27 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dr. Pryor
+INFO  | 2021-06-12 00:04:30 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 00:04:43 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 00:04:58 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 00:05:05 | [main] bankingservice.CustomerService (CustomerService.java:163) - Zume
+INFO  | 2021-06-12 00:05:05 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 00:05:10 | [main] bankingservice.CustomerService (CustomerService.java:166) - Nderu
+INFO  | 2021-06-12 09:35:39 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 09:35:58 | [main] bankingservice.CustomerService (CustomerService.java:163) - JohnDoe
+INFO  | 2021-06-12 09:35:58 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 09:36:04 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 10:18:59 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 10:19:31 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dr. Pryor
+INFO  | 2021-06-12 10:19:33 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 10:19:47 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 10:19:54 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 10:19:58 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dr. Pryor
+INFO  | 2021-06-12 10:20:00 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 10:20:07 | [main] bankingservice.CustomerService (CustomerService.java:241) - password 
+INFO  | 2021-06-12 10:22:26 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 10:22:31 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dr. Pryor
+INFO  | 2021-06-12 10:22:33 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 10:22:37 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 10:23:43 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 10:23:48 | [main] bankingservice.CustomerService (CustomerService.java:235) - Vince Pryor
+INFO  | 2021-06-12 10:23:48 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 10:23:53 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 11:38:08 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 11:38:13 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-12 11:38:14 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 11:38:17 | [main] bankingservice.CustomerService (CustomerService.java:241) - Valentine
+INFO  | 2021-06-12 11:56:24 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 11:56:39 | [main] bankingservice.CustomerService (CustomerService.java:163) - Dr. Pryor
+INFO  | 2021-06-12 11:56:39 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 11:56:51 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 11:59:34 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 11:59:38 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dr. Pryor
+INFO  | 2021-06-12 11:59:39 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 11:59:43 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
