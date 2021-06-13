@@ -132,3 +132,38 @@ INFO  | 2021-06-12 11:59:34 | [main] bankingservice.CustomerService (CustomerSer
 INFO  | 2021-06-12 11:59:38 | [main] bankingservice.CustomerService (CustomerService.java:235) - Dr. Pryor
 INFO  | 2021-06-12 11:59:39 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
 INFO  | 2021-06-12 11:59:43 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 12:30:56 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 12:30:59 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles
+INFO  | 2021-06-12 12:30:59 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 12:31:04 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 12:31:13 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 12:31:17 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-12 12:31:19 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 12:31:21 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 12:33:40 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 12:33:50 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles
+INFO  | 2021-06-12 12:33:50 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 12:33:53 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 12:34:06 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 12:42:32 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 12:42:35 | [main] bankingservice.CustomerService (CustomerService.java:163) - Niles
+INFO  | 2021-06-12 12:42:35 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 12:42:39 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 12:42:57 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 12:43:01 | [main] bankingservice.CustomerService (CustomerService.java:235) - Niles
+INFO  | 2021-06-12 12:43:28 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 12:43:28 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 13:43:04 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 13:43:23 | [main] bankingservice.CustomerService (CustomerService.java:163) - V
+INFO  | 2021-06-12 13:43:23 | [main] bankingservice.CustomerService (CustomerService.java:165) - Please enter a Password
+INFO  | 2021-06-12 13:43:37 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 13:43:44 | [main] bankingservice.CustomerService (CustomerService.java:234) - Please enter your Username
+INFO  | 2021-06-12 13:43:48 | [main] bankingservice.CustomerService (CustomerService.java:235) - V
+INFO  | 2021-06-12 13:43:50 | [main] bankingservice.CustomerService (CustomerService.java:240) - Please enter your Password
+INFO  | 2021-06-12 13:43:55 | [main] bankingservice.CustomerService (CustomerService.java:241) - password
+INFO  | 2021-06-12 13:51:27 | [main] bankingservice.CustomerService (CustomerService.java:162) - Please enter a new Username
+INFO  | 2021-06-12 13:56:56 | [main] bankingservice.CustomerService (CustomerService.java:163) - V
+INFO  | 2021-06-12 13:57:03 | [main] bankingservice.CustomerService (CustomerService.java:166) - password
+INFO  | 2021-06-12 18:08:44 | [main] bankingservice.CustomerService (CustomerService.java:163) - V
+INFO  | 2021-06-12 18:14:09 | [main] bankingservice.CustomerService (null:-1) - password
+ERROR | 2021-06-12 21:02:25 | [main] bankingImpl.TransactionDao (TransactionDao.java:112) - SQL Exception: failed to select all transactions

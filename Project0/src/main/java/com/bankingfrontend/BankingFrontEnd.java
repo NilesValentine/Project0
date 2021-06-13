@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
+import org.apache.logging.log4j.core.Logger;
 
 import com.bankingmodels.Checkings;
 import com.bankingmodels.Customer;
@@ -17,12 +16,12 @@ import com.bankingservice.EmployeeService;
 
 public class BankingFrontEnd {
 	
-	final static Logger loggy = LogManager.getLogger(BankingFrontEnd.class);
+	final static Logger loggy = (Logger) LogManager.getLogger(BankingFrontEnd.class);
 
          Scanner sc = new Scanner(System.in);
 
     public void displayMenu() {
-    	 loggy.atLevel(Level.INFO);
+    	 loggy.setLevel(Level.INFO);
 
     	
         Customer customer = null;
@@ -30,7 +29,7 @@ public class BankingFrontEnd {
         String loggedIn = "";
 
         
-        System.out.println("WELCOME TO MY BANK");
+        System.out.println("WELCOME TO NILES'S BANK");
        
 
         while (true) {
@@ -115,7 +114,7 @@ public class BankingFrontEnd {
                     break;
 
                 case 5:
-                    Checkings ch = CustomerService.depositCheckings(customer);
+                    Checkings ch = CustomerService.depositCheckings(customer); //Why does this throw a NullPointerException?
                     customer.setCheckings(ch);
                     break;
 
@@ -144,39 +143,44 @@ public class BankingFrontEnd {
 
                 case 11:
                     loggedIn = "";
-                    System.out.println("Logging out");
+                    System.out.println("Have a nice day!");
                     break;
                 }
 
                 System.out.println();
             } else if (loggedIn == "employee") {
                 System.out.println("What would you like to do");
-                System.out.println("1. Approve or Reject an account registration by a user");
-                System.out.println("2. View a customer's bank accounts");
-                System.out.println("3. View a log of all transactions");
-                System.out.println("4. Logout");
+                System.out.println("1. Approve an account registration by a user");
+                System.out.println("2. Reject an account registration by a user");
+                System.out.println("3. View a customer's bank accounts");
+                System.out.println("4. View a log of all transactions");
+                System.out.println("5. Logout");
 
                 int cmd = Integer.parseInt(sc.nextLine());
 
                 switch (cmd) {
                 case 1:
-                    System.out.println("Approve or Reject an account registration by a user");
+                    System.out.println("Approve an account registration by a user");
                     EmployeeService.approveApplications();
                     break;
+                    
                 case 2:
+                    System.out.println("Approve or Reject an account registration by a user");
+                    EmployeeService.rejectApplications();
+                case 3:
                     System.out.println("View a customer's bank accounts");
                     EmployeeService.viewAccount();
                     break;
-                case 3:
+                case 4:
                     try {
                         EmployeeService.printLog();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                     break;
-                case 4:
+                case 5:
                     loggedIn = "";
-                    System.out.println("Logging out");
+                    System.out.println("Clocking out!");
                     break;
                 }
 

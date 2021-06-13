@@ -38,18 +38,18 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public boolean insertCustomer(Customer c) {
-        String sql = "INSERT into customer (username, password) values (?,?)";
+        String sql = "INSERT into customer values (default, ?, ?) returning *; ";
         try (Connection conn = ConnectionFactory.getConnection()) {
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, c.getUsername());
             ps.setString(2, c.getPassword());
-
-            boolean success = ps.execute();
+ResultSet rs = ps.executeQuery();
+if (rs.next()) {
+	c.setCustomerId(rs.getInt("customer_id"));
+	return true;
+}
             
-            if( success) {
-            return true;
-            }
 
             
 
@@ -90,6 +90,20 @@ public class CustomerDAOImpl implements CustomerDAO {
         }
 
         return customer;
+    }
+    
+    public boolean update(Customer c) {
+        String sql = "update customer set pending = ? where customer_id = ?;";
+        try (Connection conn = ConnectionFactory.getConnection()) {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setBoolean(1, c.getPending());
+            ps.setInt(2, c.getCustomerId());
+            return ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+        return false;
     }
     
 }

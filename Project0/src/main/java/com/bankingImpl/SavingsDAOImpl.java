@@ -12,7 +12,7 @@ import com.bankingutility.ConnectionFactory;
 
 public class SavingsDAOImpl implements SavingsDAO {
 	  public boolean insertSavings(int c, double savingsBalance) {
-	        String sql = "INSERT into savings (balance,customer_id) values " + "(?,?)";
+	        String sql = "INSERT into savings values (default, ?,?);";
 	        try (Connection conn = ConnectionFactory.getConnection()) {
 
 	            PreparedStatement ps = conn.prepareStatement(sql);

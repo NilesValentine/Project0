@@ -2,14 +2,22 @@ package com.bankingservice;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.util.List;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.bankingImpl.CustomerDAOImpl;
+import com.bankingImpl.TransactionDAO;
 import com.bankingmodels.Customer;
 import com.bankingmodels.Employee;
+import com.bankingmodels.Transaction;
 
 ;
 
+@SuppressWarnings("unused")
 public class EmployeeService {
 	private static Scanner sc = new Scanner(System.in);
 
@@ -32,8 +40,20 @@ public class EmployeeService {
         return null;
 
     }
-
+    
     public static void approveApplications() {
+    	String username;
+    	System.out.println("Please enter Customer's username you'd like to approve");
+    	username = sc.nextLine();
+    	
+    	CustomerDAOImpl cDao = new CustomerDAOImpl();
+    	Customer customer = cDao.selectCustomerByUsername(username);
+    	customer.setPending(true);
+    	cDao.update(customer);
+    	
+    }
+
+    public static void rejectApplications() {
         String username;
         System.out.println("Please enter Customer's Username you would like to reject");
         username = sc.nextLine();
@@ -58,26 +78,18 @@ public class EmployeeService {
             System.out.println(customer.toString());
         }
     }
-
+    public static final Logger logger = LogManager.getLogger(EmployeeService.class);
     public static void printLog() throws Exception {
-
-        File file = new File("/Users/nilsev/jdbc:postgresql://database-project0.cgjdktnpvary.us-east-2.rds.amazonaws.com:5432/postgressrc/main/log4j-application.log");
-        
-		@SuppressWarnings("resource")
-		FileInputStream fis = new FileInputStream(file);
-
-        int oneByte;
-        while ((oneByte = fis.read()) != -1) {
-            System.out.write(oneByte);
-          
-        }
-        System.out.flush();
+    	List<Transaction> list = (new TransactionDAO()).selectAllTransactions();
+    	for( Transaction t: list) {
+    		System.out.println(t);
+    	}
+       
 
 
-
- System.out.println("1. Approve or reject an account registration by a user");
- System.out.println("2. View a customer's bank accounts");
- System.out.println("3. View a log of all transactions");
+ //System.out.println("1. Approve or reject an account registration by a user");
+ //System.out.println("2. View a customer's bank accounts");
+ //System.out.println("3. View a log of all transactions");
  
  }
  

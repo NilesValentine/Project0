@@ -12,6 +12,8 @@ import com.bankingutility.ConnectionFactory;
 
 public class CheckingsDAOImpl implements CheckingsDAO {
 	
+	
+	
 	public boolean insertCheckings(int c, double checkingsBalance) {
         String sql = "INSERT into checkings (balance,customer_id) values (?,?)";
         try (Connection conn = ConnectionFactory.getConnection()) {

@@ -8,9 +8,11 @@ import org.apache.logging.log4j.Logger;
 import com.bankingImpl.CheckingsDAOImpl;
 import com.bankingImpl.CustomerDAOImpl;
 import com.bankingImpl.SavingsDAOImpl;
+import com.bankingImpl.TransactionDAO;
 import com.bankingmodels.Checkings;
 import com.bankingmodels.Customer;
 import com.bankingmodels.Savings;
+import com.bankingmodels.Transaction;
 
 
 @SuppressWarnings("unused")
@@ -21,17 +23,19 @@ public class CustomerService {
 
     public static Checkings depositCheckings(Customer c) {
         double amount;
-        double balance = c.getCheckings().getCheckingsBalance();
+        double balance = c.getCheckings().getCheckingsBalance(); //Why does this throw a NullPointerException?
 
         CheckingsDAOImpl cDao = new CheckingsDAOImpl();
+TransactionDAO tDao = new TransactionDAO();
 
-        loggy.info("Please enter the amount you want to deposit into your Checkings");
-        loggy.info(amount = sc.nextDouble());
+        System.out.println("Please enter the amount you want to deposit into your Checkings");
+        amount = sc.nextDouble();
         if (amount >= 0) {
             balance += amount;
 
             cDao.updateCheckingsBalance(c, balance);
-
+            Transaction transaction = new Transaction(0, null, (int) amount, 0, 0, 0, null);
+        tDao.insertTransaction(transaction);
         } else {
             System.out.println("You can not deposit a negative value!!!");
         }
@@ -44,14 +48,16 @@ public class CustomerService {
         double balance = c.getSavings().getSavingsBalance();
 
         SavingsDAOImpl sDao = new SavingsDAOImpl();
-
-        loggy.info("Please enter the amount you want to deposit into your Savings");
-        loggy.info(amount = sc.nextDouble());
+        TransactionDAO tDao = new TransactionDAO();
+        
+        System.out.println("Please enter the amount you want to deposit into your Savings");
+        amount = sc.nextDouble();
         if (amount >= 0) {
             balance += amount;
 
             sDao.updateSavingsBalance(c, balance);
-
+            Transaction transaction = new Transaction(0, null, (int) amount, 0, 0, 0, null);
+            tDao.insertTransaction(transaction);
         } else {
             System.out.println("You can not deposit a negative value!!!");
         }
@@ -63,12 +69,16 @@ public class CustomerService {
         double balance = c.getCheckings().getCheckingsBalance();
 
         CheckingsDAOImpl cDao = new CheckingsDAOImpl();
+        TransactionDAO tDao = new TransactionDAO();
 
-        loggy.info("Please enter the amount you want to withdraw from your Checkings");
-        loggy.info(amount = sc.nextDouble());
+        System.out.println("Please enter the amount you want to withdraw from your Checkings");
+        amount = sc.nextDouble();
 
         if (amount >= 0 && amount < balance) {
             balance -= amount;
+            Transaction transaction = new Transaction(0, null, (int) balance, 0, 0, 0, null);
+            tDao.insertTransaction(transaction);
+            
         } else if (amount > balance) {
             System.out.println("You can not have a negative balance!!!");
         } else {
@@ -84,11 +94,15 @@ public class CustomerService {
         double balance = c.getSavings().getSavingsBalance();
 
         SavingsDAOImpl cDao = new SavingsDAOImpl();
-
-        loggy.info("Please enter the amount you want to withdraw from your Savings");
-        loggy.info(amount = sc.nextDouble());
+        TransactionDAO tDao = new TransactionDAO();
+        
+        System.out.println("Please enter the amount you want to withdraw from your Savings");
+        amount = sc.nextDouble();
         if (amount >= 0 && amount < balance) {
             balance -= amount;
+            Transaction transaction = new Transaction(0, null, (int) balance, 0, 0, 0, null);
+            tDao.insertTransaction(transaction);
+            
         } else if (amount > balance) {
             System.out.println("You can not have a negative balance!!!");
         } else {
@@ -106,13 +120,17 @@ public class CustomerService {
 
         CheckingsDAOImpl cDao = new CheckingsDAOImpl();
         SavingsDAOImpl sDao = new SavingsDAOImpl();
+        TransactionDAO tDao = new TransactionDAO();
 
-        loggy.info("Please enter the amount you want to transfer from your Checkings to your Savings");
-        loggy.info(amount = sc.nextDouble());
+        System.out.println("Please enter the amount you want to transfer from your Checkings to your Savings");
+        amount = sc.nextDouble();
 
         if (amount >= 0 && amount < chBalance) {
             chBalance -= amount;
             sBalance += amount;
+            Transaction transaction = new Transaction(0, null, (int) chBalance, 0, 0, 0, null);
+            tDao.insertTransaction(transaction);
+            
         } else if (amount > chBalance) {
             System.out.println("You can not have a negative balance!!!");
         } else {
@@ -134,13 +152,17 @@ public class CustomerService {
 
         CheckingsDAOImpl cDao = new CheckingsDAOImpl();
         SavingsDAOImpl sDao = new SavingsDAOImpl();
+        TransactionDAO tDao = new TransactionDAO();
 
-        loggy.info("Please enter the amount you want to transfer from your Savings to your Checkings");
-        loggy.info(amount = sc.nextDouble());
+        System.out.println("Please enter the amount you want to transfer from your Savings to your Checkings");
+        amount = sc.nextDouble();
 
         if (amount >= 0 && amount < sBalance) {
             chBalance += amount;
             sBalance -= amount;
+            Transaction transaction = new Transaction(0, null, (int) chBalance, 0, 0, 0, null);
+            tDao.insertTransaction(transaction);
+            
         } else if (amount > sBalance) {
             System.out.println("You can not have a negative balance!!!");
         } else {
@@ -152,23 +174,23 @@ public class CustomerService {
 
         c.setCheckings(c.getCheckings());
         c.setSavings(c.getSavings());
-
+sc.nextLine();
     }
 
     public static Customer createAccount() {
         String username;
         String password;
 
-        loggy.info("Please enter a new Username");
-        loggy.info(username = sc.nextLine());
+        System.out.println("Please enter a new Username");
+        username = sc.nextLine();
 
-        loggy.info("Please enter a Password");
-        loggy.info(password = sc.nextLine());
+        System.out.println("Please enter a Password");
+        password = sc.nextLine();
 
         Customer customer = new Customer(0, username, password, null, null);
 
         CustomerDAOImpl cDao = new CustomerDAOImpl();
-
+         
         cDao.insertCustomer(customer);
 
         return customer;
@@ -231,14 +253,14 @@ public class CustomerService {
         String username;
         String password;
 
-        loggy.info("Please enter your Username");
-        loggy.info(username = sc.nextLine());
+        System.out.println("Please enter your Username");
+        username = sc.nextLine();
 
         CustomerDAOImpl cDao = new CustomerDAOImpl();
         Customer customer = cDao.selectCustomerByUsername(username);
 
-        loggy.info("Please enter your Password"); //Why does this throw an uncaught NullPointerException?
-        loggy.info(password = sc.nextLine());
+        System.out.println("Please enter your Password"); //Why does this throw an uncaught NullPointerException?
+        password = sc.nextLine();
 
         if (customer.getPassword().equals(password)) { //Why does this throw an uncaught NullPointerException?
             return customer;

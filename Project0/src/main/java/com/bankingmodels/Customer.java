@@ -7,9 +7,15 @@ public class Customer {
     private Checkings checkings;
     private Savings savings;
     public Customer getCustomerId;
-
+    private Boolean pending;
     
-    public Customer() {
+    public Boolean getPending() {
+		return pending;
+	}
+	public void setPending(Boolean pending) {
+		this.pending = pending;
+	}
+	public Customer() {
         super();
     }
     public Checkings getCheckings() {
